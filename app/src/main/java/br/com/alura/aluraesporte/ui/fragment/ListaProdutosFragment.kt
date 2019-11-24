@@ -43,9 +43,9 @@ class ListaProdutosFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        item.let {menuItem ->
-            when(menuItem?.itemId){
-                R.id.menu_lista_produtos_deslogar ->{
+        item.let { menuItem ->
+            when (menuItem?.itemId) {
+                R.id.menu_lista_produtos_deslogar -> {
                     loginViewModel.desloga()
                     vaiParaLogin()
                 }
@@ -56,7 +56,7 @@ class ListaProdutosFragment : Fragment() {
 
     private fun vaiParaLogin() {
         val directions =
-            ListaProdutosFragmentDirections.actionListaProdutosToLogin()
+            ListaProdutosFragmentDirections.actionGlobalLogin()
         controlador.navigate(directions)
     }
 
