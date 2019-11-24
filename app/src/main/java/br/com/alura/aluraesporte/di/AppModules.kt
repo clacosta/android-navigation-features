@@ -80,7 +80,7 @@ val daoModule = module {
     single<ProdutoRepository> { ProdutoRepository(get()) }
     single<PagamentoRepository> { PagamentoRepository(get()) }
     single<LoginRepository> { LoginRepository(get()) }
-    single<SharedPreferences> { PreferenceManager.getDefaultSharedPreferences() }
+    single<SharedPreferences> { PreferenceManager.getDefaultSharedPreferences(get()) }
 }
 
 val uiModule = module {
