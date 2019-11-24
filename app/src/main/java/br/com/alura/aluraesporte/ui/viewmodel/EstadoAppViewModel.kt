@@ -17,5 +17,5 @@ class EstadoAppViewModel : ViewModel() {
             field = value
             _appBar.value = value
         }
-    
+
 }
