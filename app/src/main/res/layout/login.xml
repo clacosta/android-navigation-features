@@ -61,8 +61,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Cadastrar usuário"
         android:background="@android:color/transparent"
+        android:text="Cadastrar usuário"
         app:layout_constraintEnd_toEndOf="@id/login_botao_logar"
         app:layout_constraintStart_toStartOf="@id/login_botao_logar"
         app:layout_constraintTop_toBottomOf="@id/login_botao_logar" />
