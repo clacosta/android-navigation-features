@@ -30,7 +30,7 @@ class ListaPagamentosFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         lista_pagamentos_recyclerview.adapter = adapter
         viewModel.todos().observe(this, Observer {
-            it?.let {pagamentos ->
+            it?.let { pagamentos ->
                 adapter.add(pagamentos)
             }
         })
