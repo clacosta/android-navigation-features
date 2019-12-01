@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import br.com.alura.aluraesporte.model.Pagamento
 import br.com.alura.aluraesporte.model.Produto
 
 @Dao
@@ -17,5 +18,8 @@ interface ProdutoDAO {
 
     @Query("SELECT * FROM Produto WHERE id = :id")
     fun buscaPorId(id: Long): LiveData<Produto>
+
+    @Query("SELECT * FROM Pagamento")
+    fun todos(): LiveData<List<Pagamento>>
 
 }
